@@ -1,0 +1,8 @@
+{
+  "name": " ECOSKIN AI Skincare Advisor V",
+  "description": "An AI-powered personal skincare and beauty advisor. Upload or take a photo to get personalized skin analysis, color matching, makeup advice, and even see an AI-generated age progression video.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

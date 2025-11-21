@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "description": "Cache CSS and JS for 1 year with versioning",
+      "urlPattern": "^.+\\.(css|js|wasm)$",
+      "cached": true,
+      "cacheName": "assets-cache",
+      "expiration": {
+        "maxAgeSeconds": 31536000,
+        "maxEntries": 100
+      }
+    },
+    {
+      "description": "Cache images for 30 days",
+      "urlPattern": "^.+\\.(png|jpg|jpeg|svg|gif|webp)$",
+      "cached": true,
+      "cacheName": "image-cache",
+      "expiration": {
+        "maxAgeSeconds": 2592000,
+        "maxEntries": 200
+      }
+    },
+    {
+      "description": "Cache API responses for 5 minutes",
+      "urlPattern": "^https://generativelanguage\\.googleapis\\.com/.*",
+      "cached": true,
+      "cacheName": "api-cache",
+      "expiration": {
+        "maxAgeSeconds": 300,
+        "maxEntries": 50
+      }
+    },
+    {
+      "description": "Network first for HTML documents",
+      "urlPattern": "^.+\\.html$",
+      "cached": false
+    }
+  ]
+}
