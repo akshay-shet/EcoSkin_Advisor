@@ -3,9 +3,6 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": "vite",
-  "env": {
-    "GEMINI_API_KEY": "@GEMINI_API_KEY"
-  },
   "crons": [],
   "regions": ["iad1"],
   "git": {
